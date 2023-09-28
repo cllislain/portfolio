@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, close, menu} from '../assets'
-import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaFacebook, FaFileDownload } from 'react-icons/fa';
 import Resume from '../resume/cllislain_resume.pdf';
 
 const Navbar = () => {
@@ -63,19 +63,38 @@ const Navbar = () => {
             />
             <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-purple-950 border items-center justify-center border-violet-500 bg-opacity-30 absolute top-20 right-0 mx-4 my-2 min-w-[100px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
-                <li>
+              <li>
               <a href="https://github.com/cllislain">
+              <div className='flex flex-row gap-1'>
                 <FaGithub size={24} />
+                | Github
+                </div>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/cllislain/">
+              <div className='flex flex-row gap-1'>
                 <FaInstagram size={24} />
+                | Instagram
+                </div>
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/cllislain/">
+                <div className='flex flex-row gap-1'>
                 <FaFacebook size={24} />
+                | Facebook
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+              title='Download CV'
+              href={Resume}
+              download='Claze-Lislain-Resume'
+              target='_blank'
+              rel='noopener nonreferrer'>
+                <div className='flex flex-row gap-1'><FaFileDownload size={24} />| Download CV</div>
               </a>
             </li>
         </ul>
