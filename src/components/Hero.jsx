@@ -12,7 +12,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white pt-10 pb-0`}>
-            Hi, I'm&nbsp;<span className='text-[#915EFF] absolute'>Lislain</span>
+            Hi, <span className='text-[#915EFF]'>Lislain</span> here👋.
           </h1>
           <p className={`${styles.heroSubText}`}>I'm a <span className='text-[#915EFF]'>
             <TypeAnimation

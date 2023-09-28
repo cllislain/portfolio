@@ -11,6 +11,7 @@ import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";;
 import reactjs from "./tech/reactjs.png";
+import redux from "./tech/redux.png"
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
@@ -48,4 +49,5 @@ export {
   django,
   facebook,
   instagram,
+  redux,
 };

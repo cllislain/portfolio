@@ -15,34 +15,8 @@ import {
     todo,
     python,
     django,
-    facebook,
-    github,
-    instagram,
+    redux,
   } from "../assets";
-  import { FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
-
-
-  
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-      url: "https://github.com/cllislain/",
-      icons: FaGithub,
-    },
-    {
-      id: "work",
-      title: "Work",
-      url: "https://github.com/cllislain/",
-      icons: FaInstagram,
-    },
-    {
-      id: "contact",
-      title: "Contact",
-      url: "https://github.com/cllislain/",
-      icons: FaFacebook,
-    },
-  ];
   
   const services = [
     {
@@ -99,6 +73,10 @@ import {
     {
       name: "django",
       icon: django,
+    },
+    {
+      name: "redux",
+      icon: redux,
     },
   ];
   

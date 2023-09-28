@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
-import { navLinks } from '../constants'
 import { logo, close, menu} from '../assets'
 import { FaGithub, FaInstagram, FaFacebook, FaFileDownload } from 'react-icons/fa';
 import Resume from '../resume/cllislain_resume.pdf';
@@ -11,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primary bg-opacity-0`}>
+    <nav className={`${styles.paddingX}w-full flex items-center py-5 top-0 z-20 bg-primary bg-opacity-0`}>
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to="/"
@@ -20,29 +19,29 @@ const Navbar = () => {
           setActive("")
           window.scrollTo(0, 0)
         }}>
-          <p className='text-white text-[15px] font-bold cursor-pointer'>Lislain &nbsp;
+          <p className='text-white text-[20px] font-bold cursor-pointer'>Lislain &nbsp;
           <span>| Web Developer</span>
           </p>
         </Link>
         
         <div className='md:block hidden'>
-          <a href="https://cllislain.github.io/POG/"><img src={logo} alt={logo} className='sm:block hidden w-15 h-9 object-contain'/></a>
+          <a href="https://cllislain.github.io/POG/"><img src={logo} alt={logo} className='sm:block hidden w-20 h-auto object-contain'/></a>
         </div>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
 
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
         <li>
           <a href="https://github.com/cllislain">
-            <FaGithub size={24} />
+            <FaGithub size={28} />
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/cllislain/">
-            <FaInstagram size={24} />
+            <FaInstagram size={28} />
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/cllislain/">
-            <FaFacebook size={24} />
+            <FaFacebook size={28} />
           </a>
         </li>
         <li>
@@ -65,7 +64,7 @@ const Navbar = () => {
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               <li>
               <a href="https://github.com/cllislain">
-              <div className='flex flex-row gap-1'>
+              <div className='flex flex-row gap-1 hover:text-violet-700 active:text-violet-800 focus:outline-none focus:ring focus:ring-violet-300'>
                 <FaGithub size={24} />
                 | Github
                 </div>
@@ -73,7 +72,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="https://www.instagram.com/cllislain/">
-              <div className='flex flex-row gap-1'>
+              <div className='flex flex-row gap-1 hover:text-violet-700 active:text-violet-800 focus:outline-none focus:ring focus:ring-violet-300'>
                 <FaInstagram size={24} />
                 | Instagram
                 </div>
@@ -81,7 +80,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="https://www.facebook.com/cllislain/">
-                <div className='flex flex-row gap-1'>
+                <div className='flex flex-row gap-1 hover:text-violet-700 active:text-violet-800 focus:outline-none focus:ring focus:ring-violet-300'>
                 <FaFacebook size={24} />
                 | Facebook
                 </div>
@@ -94,7 +93,8 @@ const Navbar = () => {
               download='Claze-Lislain-Resume'
               target='_blank'
               rel='noopener nonreferrer'>
-                <div className='flex flex-row gap-1'><FaFileDownload size={24} />| Download CV</div>
+                <div className='flex flex-row gap-1 hover:text-violet-700 active:text-violet-800 focus:outline-none focus:ring focus:ring-violet-300'>
+                  <FaFileDownload size={24} />| Download CV</div>
               </a>
             </li>
         </ul>
